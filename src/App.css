@@ -12,10 +12,19 @@ html, body {
 
 /* https://10015.io/tools/css-loader-generator */
 .spinner {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    border: 9px solid #f1f2ff;
-    animation: spinner-bulqg1 0.8s infinite linear alternate,
-      spinner-oaa3wk 1.6s infinite linear;
+  width: 28px;
+  height: 28px;
+  border: 3px solid #7d7d7d;
+  border-top: 3px solid #131320; /* Accent color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
+}
+

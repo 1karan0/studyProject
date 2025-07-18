@@ -59,7 +59,7 @@ const Navbar = () => {
       <div className='flex w-11/12 max-w-maxContent items-center justify-between'>
         {/* Image */}
       <Link to="/">
-        <img src={logo} width={160} height={42} loading='lazy'/>
+        <img src={logo} alt='logo' width={160} height={42} loading='lazy'/>
       </Link>
 
       {/* Nav Links */}
@@ -75,8 +75,8 @@ const Navbar = () => {
                                 <IoIosArrowDropdownCircle/>
 
                                 <div className='invisible absolute left-[50%]
-                                    translate-x-[-50%] translate-y-[80%]
-                                 top-[50%]
+                                    translate-x-[-50%] translate-y-[50%] z-50
+                                 top-[0%]
                                 flex flex-col rounded-md bg-richblack-5 p-4 text-richblack-900
                                 opacity-0 transition-all duration-200 group-hover:visible
                                 group-hover:opacity-100 lg:w-[300px]'>
