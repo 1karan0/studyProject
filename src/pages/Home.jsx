@@ -63,11 +63,12 @@ const Home = () => {
         {/* Code Section 1 */}
         <div>
             <CodeBlocks 
+            backgroudGradient={"from-[#8a2be2] via-[#ffa500] to-[#f8f8ff]"}
                 position={"lg:flex-row"}
                 heading={
                     <div className='text-4xl font-semibold'>
                         Unlock Your
-                        <HighlightText text={"coding potential"}/>
+                        <HighlightText text={"coding potential "}/>
                         with our online courses
                     </div>
                 }
@@ -97,11 +98,13 @@ const Home = () => {
                 {/* Code Section 2 */}
         <div>
             <CodeBlocks 
+            backgroudGradient={"from-[#1fa2ff] via-[#12d8fa] to-[#a6ffcb]"}
+            
                 position={"lg:flex-row-reverse"}
                 heading={
                     <div className='text-4xl font-semibold'>
                         Unlock Your
-                        <HighlightText text={"coding potential"}/>
+                        <HighlightText text={"coding potential "}/>
                         with our online courses
                     </div>
                 }
@@ -124,7 +127,7 @@ const Home = () => {
                 }
 
                 codeblock={`<<!DOCTYPE html>\n<html>\nhead><title>Example</title><linkrel="stylesheet"href="styles.css">\n/head>\n`}
-                codeColor={"text-yellow-25"}
+                codeColor={"text-white"}
             />
         </div>
 
