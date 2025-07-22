@@ -15,9 +15,9 @@ const Dashboard = () => {
         )
     }
   return (
-    <div className='relative flex'>
+    <div className='relative flex w-full h-screen '>
       <Sidebar/>
-      <div className=' overflow-hidden w-full'>
+      <div className=' overflow-y-scroll w-full'>
         <div className='  py-10'>
             <Outlet/>
         </div>

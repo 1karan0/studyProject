@@ -25,7 +25,7 @@ const Sidebar = () => {
   }
   return (
     <div className="text-white">
-      <div className="w-[250px] flex flex-col border-r-[1px] border-r-richblack-700 h-[calc(100ch-3.5rem)] bg-richblack-800 py-10">
+      <div className="w-[250px] flex flex-col border-r-[1px] border-r-richblack-700 h-screen bg-richblack-800 py-10">
         {sidebarLinks.map((link, index) => {
           if (link.type && user?.accountType !== link.type) return null;
           return (
@@ -42,8 +42,8 @@ const Sidebar = () => {
         <button
           onClick={() =>
             setConfirmationModal({
-              text1: "Are you sure you want to logout?",
-              text2: "You can login again anytime",
+              text1: "Are you sure ?",
+              text2: "You will be logout of your account",
               btn1Text: "Logout",
               btn2Text: "Cancel",
               btn1Handler: () => dispatch(logout(navigate)),

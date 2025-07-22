@@ -7,14 +7,16 @@ const IconButton = ({
   disable,
   outline = false,
   customClasses,
+  color,
   type,
 }) => {
   return <button disabled={disable}
   onClick={onClick}
   type={type}
+  className={`bg-${color} text-richblack-800 font-semibold px-6 py-2 rounded-[4px]`}
   >
     {children ? (<><span >{text}</span></>):(
-      <span className="bg-yellow-50 text-richblack-800 px-6 py-2 rounded-[4px]">{text}</span>
+      <span className="">{text}</span>
     )}
   </button>;
 };

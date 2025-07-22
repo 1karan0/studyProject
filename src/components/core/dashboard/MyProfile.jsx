@@ -32,7 +32,7 @@ const MyProfile = () => {
                     <p className='text-xs text-richblack-400'> {user?.email}</p>
                 </div>
             </div>
-            <IconButton  text="Edit" onClick={() => navigate("/dashboard/settings")} />
+            <IconButton  text="Edit" onClick={() => navigate("/dashboard/settings")} color="yellow-50"/>
           </div>
         </div>
         {/* section-2 */}
@@ -42,6 +42,7 @@ const MyProfile = () => {
             <IconButton
             text="Edit"
             onClick={()=> navigate("/dashboard/settings")}
+            color="yellow-50"
             />
           </div>
           <p className='text-xs text-richblack-400'>{user?.additionalDetails?.about ?? "write something about yourself"}</p>
@@ -53,6 +54,7 @@ const MyProfile = () => {
             <IconButton
             text="Edit"
             onClick={()=> navigate("/dashboard/settings")}
+            color="yellow-50"
             />
           </div>
           <div className='grid grid-cols-2'>

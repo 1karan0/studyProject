@@ -86,6 +86,7 @@ export default function ChangeProfilePicture() {
               <IconButton
                 text={loading ? "Uploading..." : "Upload"}
                 onClick={handleFileUpload}
+                color="yellow-50"
               >
                 {!loading && (
                   <FiUpload className="text-lg text-richblack-900" />
